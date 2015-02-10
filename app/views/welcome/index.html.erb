@@ -1,0 +1,12 @@
+<h1>Welcome to my Travel Site</h1>
+<p>This is my very awesome travel site.</p>
+
+<p>I'm from <%= @homeland %></p>
+
+<ul>
+	<% @countries.each do |country| %>
+	 <li><%= country %></li>
+	<% end %>
+</ul>
+
+<%= image_tag "peru.jpg", alt: "Macchu Picchu", id:"country", class: "awesome", class: "img-responsive" %>
